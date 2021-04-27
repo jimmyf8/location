@@ -25,6 +25,9 @@
   {
     font-family:'Raleway', sans-serif;/*police*/ 
   }
+  /********************************************
+                         Header
+  **********************************************/
   
   /*Navigation*/
 
@@ -259,20 +262,12 @@
     margin-left: 0.9rem;
   }
 
-  /********************************************
-                         Header
-  **********************************************/
+ 
   .logo a {
     display: flex;
     padding: 1.2rem;
   }
-  nav 
-  {
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+ 
   
   /**************************
     MAIN
@@ -311,6 +306,7 @@
   
     .Populaires 
     {
+     
       max-width: 420px;
       flex: 1;
       margin-left: 2rem;
@@ -318,12 +314,13 @@
       border-radius: 1rem;
     }
   
-    .Hébergements 
+    .Hébergements /*fonds*/
     {
-      order: -1;
       background-color: var(--tertiary-color);
       flex: 1;
       border-radius: 1rem;
+      margin-bottom: 2rem;
+      height: 670px;
     }
   
     .Activités
@@ -340,6 +337,7 @@
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 2rem;
   }
   
   .card-group 
@@ -347,11 +345,6 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-  }
-  
-  .Hébergements .cards 
-  {
-    margin-bottom: 2rem;
   }
   
   .card 
@@ -381,26 +374,27 @@
   {
     padding: 0;
     margin-bottom: 1.5rem;
+    height: 200px;
   }
   
   
   
-  .Hébergements .card, .Activités .card 
+  .Hébergements .card
   {
     height: 200px;
   }
   
-  .Populaires .card-img 
+  .Populaires .card-img /*largeur image*/
   {
     max-width: 42%;
   }
   
-  .Hébergements .card-img 
+  .Hébergements .card-img /*hauteur image*/
   {
     height: 115px;
   }
   
-  .Activités .card-img 
+  .Activités .card-img /*propriété version mobile*/
   {
     height: calc(100% - 3rem);
   }
@@ -452,12 +446,12 @@
   .card p 
   {
     max-height: 100rem;
-    overflow: hidde
+    overflow: hidden;
   }
   
   .Activités .card-content 
   {
-    height: 3rem;
+   
     padding-left: 1.125rem;
   }
   
@@ -466,11 +460,11 @@
     margin-top: 0.5rem;
   }
   
-  .card i 
+  .card i /*étoiles*/
   {
     color: var(--tertiary-color);
     font-size: 0.75rem;
-    letter-spacing: -3px;
+    letter-spacing: 0px;
   }
   
   .card .blue 
@@ -480,7 +474,8 @@
   
   @media screen and (min-width: 768px) 
   {
-    .Hébergements .cards {
+    .Hébergements .cards 
+    {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;

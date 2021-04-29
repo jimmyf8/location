@@ -17,7 +17,7 @@
   
   section,aside,footer 
   {
-    padding: 2rem 1.5rem;
+    padding: 2rem 2rem;
     
   }
 
@@ -35,14 +35,6 @@
     justify-content: space-between;
   }
   /*Navigation*/
-
-  .nav
-  {
-  
-  }
-
-
-
   a 
   {
     color: rgb(0, 0, 0);
@@ -166,6 +158,72 @@
       display: inline;
       padding: 0 0rem;
     }
+    .navigation
+
+    {
+      display: flex;
+      width: 1950px;
+    }
+    nav
+
+    {
+      display: flex;
+      justify-content: space-between;
+      
+      
+    }
+   
+   
+   
+
+    nav li 
+    {
+     display: inline-block;
+     list-style-type: none;
+     padding: 30px 30px 0px 30px;
+     padding-left: 500px;
+    }
+    nav li:hover
+    {
+      border-top: solid 2.2px var(--primary);
+      padding-top: 35px;
+      color: var(--primary);
+    }
+
+    
+
+  .link::after
+    {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: blue;
+      transition: width .3s;
+  
+    }
+
+    .link:hover::after
+    {
+      width: 110%;
+      transition: width .3s;
+    }
+  .inscrire
+  {
+      color: #0065fc;
+      font-weight: bold;
+      padding-top: 35px;
+      font-size: 18px;
+      float: right;
+      padding-left: 15px;
+  }
+  
+    .Populaires
+    {
+      padding-bottom: 50px;
+    }
+    
+
   }
   
   
@@ -263,12 +321,15 @@
     margin-left: 0.9rem;
   }
 
+  
  
   .logo a {
     display: flex;
     padding: 1.2rem;
   }
  
+  
+  
   
   /**************************
     MAIN
@@ -299,8 +360,91 @@
 
   
 
-  @media screen and (max-width: 425px) 
+  @media screen and (max-width: 425px) /*version mobile*/
   {
+    body
+    {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container_nav
+    {
+     
+     position: absolute;
+   
+    }
+
+    li
+    {
+      
+      display: inline-block;
+  
+    }
+
+    li a
+    {
+      padding: 0 50px;
+      
+    }
+
+    .link::after
+    {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: blue;
+      transition: width .3s;
+  
+    }
+
+    .link:hover::after
+    {
+      width: 110%;
+      transition: width .3s;
+    }
+    .inscrire
+    {
+      position: relative;
+      left:200px;
+      bottom: 90px;
+      
+    }
+    .inscrire :hover
+    {
+      text-decoration: overline;
+      color: #3838c5;
+
+    }
+
+    footer .container 
+    {
+      padding-top: 0;
+      display: block;
+      justify-content: center;
+       
+    }
+
+    ul
+    {
+      
+      display: block;
+      justify-content: flex-start;
+      width: 400px;
+    }
+
+    
+    
+    h4
+    {
+      position: relative;
+      left: 90px;
+    }
+  
+    
+    
+    
     main 
     {
       display: flex;
@@ -311,30 +455,15 @@
     .Populaires 
     {
       order: -1;
-      background-color: transparent;
+      background-color: #f2f2f2;
     }
 
-    .nav
-    {
-      display: flex;
-      justify-content: space-between;
-      width: 300px;
-      padding-left: 1rem;
-      
-    }
-    .inscrire
-    {
-      position: relative;
-      right: 50px;
-      top: 30px;
-    }
-
-   
   }
-
+ 
   
-  @media screen and (min-width: 768px) 
+  @media screen and (min-width: 768px) /*version tablette*/
   {
+    
     main 
     {
       display: flex;
@@ -344,24 +473,29 @@
   
     .Populaires 
     {
-     
       max-width: 420px;
+      min-width: 220px;
       flex: 1;
       margin-left: 2rem;
-      height: 100%;
+      height: 600px;
       border-radius: 1rem;
+      background-color: #f2f2f2;
       
     }
   
-    .Hébergements /*fonds*/
+    .Hébergements 
     {
+      display:grid;
       background-color: var(--tertiary-color);
-      flex: 1;
+      flex: 10;
       border-radius: 1rem;
-      margin-bottom: 2rem;
-      height: 1370px;
-      padding-bottom: 20rem;
+      min-height: 610px;
+      max-width: 820px;
+      
+      
     }
+    
+  
   
     .Activités
     {
@@ -369,14 +503,41 @@
       width: 100%;
     }
 
-    .inscrire
+    nav li 
     {
-      position: relative;
-      right: 10px;
-      top: 34px;  
+     display: inline-block;
+     list-style-type: none;
+     padding: 30px 30px 0px 30px;
+     padding-left: 500px;
+    }
+    nav li:hover
+    {
+      border-top: solid 2.2px var(--primary);
+      padding-top: 35px;
+      color: var(--primary);
     }
 
-    .nav
+    
+
+  .link::after
+    {
+      content: "";
+      display: block;
+      width: 0;
+      height: 2px;
+      background: blue;
+      transition: width .3s;
+  
+    }
+
+    .link:hover::after
+    {
+      width: 110%;
+      transition: width .3s;
+    }
+   
+
+    .container.nav
     {
       display: flex;
       justify-content: space-between;
@@ -535,6 +696,7 @@
   @media screen and (min-width: 768px)
   {
     
+    
     .Hébergements .cards 
     {
       display: flex;
@@ -556,7 +718,7 @@
   
     .card-group 
     {
-      height: 450px;
+      height: 650px;
       flex-wrap: wrap;
       flex: 1 100%;
       align-content: space-between;
@@ -606,12 +768,12 @@
   }
  
   
-  @media screen and (min-width: 1000px) 
+  @media screen and (min-width: 1024px) /*ordinateur portable*/
   {
 
     .Hébergements
     {
-      height: 382px;
+      height: 82px;
     }
     .card-group 
     {
@@ -621,6 +783,29 @@
     .card-group:last-of-type 
     {
       margin-left: 2.1rem;
+    }
+    footer .container 
+    {
+      padding-top: 0;
+      display: block;
+      justify-content: center;
+       
+    }
+
+    ul
+    {
+      
+      display: block;
+      justify-content: flex-start;
+      width: 400px;
+    }
+
+    
+    
+    h4
+    {
+      position: relative;
+      left: 90px;
     }
   }
   
@@ -665,6 +850,7 @@
   
   @media screen and (min-width: 768px) 
   {
+    
     footer .container 
     {
       display: flex;

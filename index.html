@@ -6,36 +6,34 @@
     <meta name="description" content="Réservation d'hébergements en ligne avec Reservia"/><!--description du site-->
     <link rel="preconnect" href="https://fonts.gstatic.com"/>
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway" />
-    <link rel="stylesheet" href="styles/styles.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css"/>
     <title>Reservia</title><!--titre de la page-->
   </head>
 
   <body>
+    <header class="header"><!--l'entête de la page-->
+      <div class="logo"><!--logo-->
+        <a href="#">
+          <img alt="Reservia" src="images/logo/Reservia@3x.png" width="90" height="50"/>
+        </a>
+      </div>
+      <div class="navigation">
+        <nav>
+            <ul>
+                <li class="menuitem"><a href="#Hebergements">Hébergements</a></li>
+                <li class="menuitem"><a href="#Activites">Activités</a></li>
+            </ul>  
+        </nav>
+        
+        <!-- Inscription -->
+        <p><a href="#" class="sinscrire">S'inscrire</a></p> 
+      </div>
+
+    </header>
     <div class="page">
       <div class="container">
-        <header class="header"><!--l'entête de la page-->
-          <nav>
-            <div class="navigation">
-              <div class="logo"><!--logo-->
-                <a href="#">
-                  <img alt="Reservia" src="images/logo/Reservia@3x.png" width="95" height="50"/>
-                </a>
-              </div>
-              <div class="container_navigation"><!--navigation-->
-                <div class="nav">
-                  <li class="link"><a href="#Hébergements">Hébergement</a></li> 
-                  <li class="link"><a href="#Activités" >Activités</a></li> 
-                  
-                </div>
-                <div class="inscription">
-                  <li class="inscrire"><a href="#inscrire" >S'inscrire</a></li>
-                </div>     
-              </div>
-            </div>
-            
-          </nav>
-        </header>
+       
         <section class="recherche/filters">
           <h2>
             Trouvez votre hébergement pour des vacances de rêve
@@ -349,32 +347,34 @@
           </section>
         </main>
       </div>
-      <footer><!--pied de page-->
-        <div class="container">
-          <div>
-            <h4>A propos</h4>
-            <ul>
-              <li><a href="#">Fonctionnement du site</a></li>
-              <li><a href="#">Conditions générales de vente</a></li>
-              <li><a href="#">Données et confidentialité</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Nos hébergements</h4>
-            <ul>
-              <li><a href="#">Charte qualité</a></li>
-              <li><a href="#">Soumettre votre hôtel</a></li>
-            </ul>
-          </div>
-          <div>
-            <h4>Assistance</h4>
-            <ul>
-              <li><a href="#">Centre d'aide</a></li>
-              <li><a href="#">Nous contacter</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer>
+      
     </div>
+    <footer><!--pied de page-->
+      <div class="container">
+        <div>
+          <h4>A propos</h4>
+          <ul>
+            <li><a href="#">Fonctionnement du site</a></li>
+            <li><a href="#">Conditions générales de vente</a></li>
+            <li><a href="#">Données et confidentialité</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Nos hébergements</h4>
+          <ul>
+            <li><a href="#">Charte qualité</a></li>
+            <li><a href="#">Soumettre votre hôtel</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Assistance</h4>
+          <ul>
+            <li><a href="#">Centre d'aide</a></li>
+            <li><a href="#">Nous contacter</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
+  
 </html>

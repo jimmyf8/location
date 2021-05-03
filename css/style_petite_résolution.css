@@ -1,0 +1,95 @@
+@media screen and (max-width: 425px) /*version mobile*/
+{
+  .page
+  {
+    max-width:376px ;
+  }
+
+  body
+  {
+    margin: 0;
+    padding: 0;
+  }
+    
+  main 
+  {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .Populaires 
+  {
+    order: -1;
+    background-color: #f2f2f2;
+  }
+
+ .header
+ {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .navigation
+ {
+   display: flex;
+   align-items: flex-start;
+   max-width: 320px;
+ }
+
+ nav ul 
+ {
+   display: flex;
+   list-style-type: none;
+   margin-top: 0;
+   margin-right: 20px;
+   /* Rendre plus visible */
+   font-weight: 500;
+ }
+
+ /* Abaisser nav et bordure noire transparente */
+ nav ul li 
+ {
+   padding: 80px 40px 0 3px;
+   position: relative;
+   border-top: none;
+   width: 100px;
+   right: 100px;
+ }
+  
+  /* Nav Bordure supérieure / Survol bleu foncé */
+  nav ul li
+  {
+    transition-duration: 0.2s;
+    padding-bottom: 20px;
+  }
+ nav ul li:hover::before
+ {
+   border-top:none; 
+   transition-duration: 0.2s;
+ }
+
+ .menuitem a:hover 
+ {
+   color: #0065fc;
+ }
+
+ /* p sinscrire / Mise en gras bleu foncé / Flottement à droite
+ Alignement avec Nav */
+ .sinscrire 
+ {
+   order: -1;
+   font-weight: bolder;
+   font-size: 16px;
+   color: #0065fc;
+   position: relative;
+   right: 200px;
+   top: 20px;
+ }
+
+ .footer
+ {
+   display: flex;
+   flex-direction: column;
+ }
+}

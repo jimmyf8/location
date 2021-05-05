@@ -46,6 +46,8 @@ Header
   display: flex;
   align-items: flex-end;
   min-width: 100px; 
+  position: relative;
+  bottom: 0px;
 }
 
 nav ul 
@@ -97,7 +99,7 @@ a
   
 .more:hover,footer a:hover 
 {
-  box-shadow:0 5px 18px #0065fc, 0 1px 0px black;
+  box-shadow:0 0px 8px #0065fc, 0 0px 0px black;
 }
   
 ul 
@@ -293,7 +295,7 @@ button span
 .logo a 
 {
   display: flex;
-  padding: 1.2rem;
+  padding-top: 1.8rem;
 }
  
 /**************************

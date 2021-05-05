@@ -1,13 +1,11 @@
 @media screen and (max-width: 500px) /*version mobile*/
 {
-
-
-  body
-  {
-    margin: 0;
-    padding: 0;
-  }
-    
+  .logo a 
+{
+  display: flex;
+  padding-top: 1rem;
+  padding-left: 20px;
+}
   main 
   {
     display: flex;
@@ -25,21 +23,26 @@
  {
    display: flex;
    flex-direction: row;
-   border: 2px;
-   border-top: 0px;
-   border-left: 0px;
-   border-right: 0px;
-   border-color: #f2f2f2;
-   border-style: solid;
-   
+   width: 340px;
  }
+
+ .header:hover
+ {
+   border-color: #0065fc;
+ }
+
 
  .navigation
  {
    display: flex;
    align-items: flex-start;
-   max-width: 320px;
+   max-width: 150px;
+   position:relative;
+   bottom:0px;
+   right:180px;
  }
+
+
 
  nav ul 
  {
@@ -56,22 +59,38 @@
  {
    padding: 80px 40px 0 3px;
    position: relative;
+   border-top: none;
    border-bottom: 10px;
-   width: 100px;
-   right: 100px;
+   width: 0px;
+   right: 60px;
+   transition-duration: 0.2s;
+   border-bottom: solid 3px #f2f2f2;
  }
   
   /* Nav Bordure supérieure / Survol bleu foncé */
-  nav ul li
-  {
-    transition-duration: 0.2s;
-    
-  }
+ 
  nav ul li:hover
  { 
-   transition-duration: 0.2s;
+   border-top: none;
+   border-bottom-width:  20px;
  }
 
+ .menuitem
+ {
+  display: flex;
+  justify-content: space-between;
+  align-self: start;
+  padding-bottom:20.5px;
+  padding-left: 62px;
+  width: 140px;
+ }
+
+ .menuitem:hover
+ {
+  border-bottom: solid 2.5px #0065fc;
+  padding-bottom: 20.5px;
+  color: var(--primary);
+ }
  .menuitem a:hover 
  {
    color: #0065fc;
@@ -86,7 +105,7 @@
    font-size: 16px;
    color: #0065fc;
    position: relative;
-   right: 200px;
+   right: 150px;
    top: 20px;
  }
 

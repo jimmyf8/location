@@ -1,127 +1,112 @@
-@media screen and (max-width: 500px) /*version mobile*/
+/*************************
+VERSION MOBILE
+*************************/
+@media screen and (max-width: 500px) 
 {
-  .logo a 
+/* décale le logo */
+.logo a 
 {
-  display: flex;
-  padding-top: 1rem;
-  padding-left: 20px;
+display: flex;
+padding-top: 1rem;
+padding-left: 20px;
 }
-  main 
-  {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
 
-  .Populaires /* populaire passe avant hébergement*/
-  {
-    order: -1;
-    background-color: #f2f2f2;
-  }
+/* alignement des sections, aside */
+main 
+{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
 
- .header
- {
-   display: flex;
-   flex-direction: row;
-   width: 340px;
- }
+/* populaire passe avant hébergement */
+.Populaires 
+{
+order: -1;
+background-color: #f2f2f2;
+}
 
- .header:hover
- {
-   border-color: #0065fc;
- }
+/*************************
+HEADER
+*************************/
+/* dimension de l'entête */
+.header 
+{
+display: flex;
+width: 340px;
+}
 
+/* positionnement de la navigation */
+.navigation 
+{
+display: flex;
+align-items: flex-start;
+max-width: 150px;
+position:relative;
+bottom:0px;
+right:180px;
+}
 
- .navigation
- {
-   display: flex;
-   align-items: flex-start;
-   max-width: 150px;
-   position:relative;
-   bottom:0px;
-   right:180px;
- }
-
-
-
- nav ul 
- {
-   display: flex;
-   list-style-type: none;
-   margin-top: 0;
-   margin-right: 20px;
-   /* Rendre plus visible */
-   font-weight: 500;
- }
-
- /* Abaisser nav et bordure noire transparente */
- nav ul li 
- {
-   padding: 80px 40px 0 3px;
-   position: relative;
-   border-top: none;
-   border-bottom: 10px;
-   width: 0px;
-   right: 60px;
-   transition-duration: 0.2s;
-   border-bottom: solid 3px #f2f2f2;
- }
+nav ul li 
+{
+padding: 80px 40px 0 3px;
+position: relative;
+/* permet l'alignement des barres au survol */
+border-top: none; 
+border-bottom: 10px;
+width: 0px;
+/* ajustement de la barre */
+right: 60px;
+/* barre avant survol */
+border-bottom: solid 3px #f2f2f2;
+}
   
-  /* Nav Bordure supérieure / Survol bleu foncé */
- 
- nav ul li:hover
- { 
-   border-top: none;
-   border-bottom-width:  20px;
- }
-
- .menuitem
- {
-  display: flex;
-  justify-content: space-between;
-  align-self: start;
-  padding-bottom:20.5px;
-  padding-left: 62px;
-  width: 140px;
- }
-
- .menuitem:hover
- {
-  border-bottom: solid 2.5px #0065fc;
-  padding-bottom: 20.5px;
-  color: var(--primary);
- }
- .menuitem a:hover 
- {
-   color: #0065fc;
- }
-
- /* p sinscrire / Mise en gras bleu foncé / Flottement à droite
- Alignement avec Nav */
- .sinscrire 
- {
-   order: -1;
-   font-weight: bolder;
-   font-size: 16px;
-   color: #0065fc;
-   position: relative;
-   right: 240px;
-   top: 20px;
- }
-
- .filtres-list-item 
+nav ul li:hover
 {
-  align-items: center;
-  border: 2px solid var(--tertiary-color);
-  border-radius: 1.75rem;
-  cursor: pointer;
-  display: flex;
-  height: 3rem;
-  margin-top: 0.75rem;
+/* annule la barre du haut au survol */
+border-top: none;
 }
- .footer
- {
-   display: flex;
-   flex-direction: column;
- }
+
+.menuitem
+{
+display: flex;
+justify-content: space-between;
+/* hauteur de la barre */
+padding-bottom:20.5px; 
+padding-left: 62px;
+width: 140px;
+}
+
+.menuitem:hover
+{
+/* couleur survol barre */
+border-bottom: solid 2.5px #0065fc; 
+}
+
+.menuitem a:hover 
+{
+/* couleur survol lien nav */
+color: #0065fc; 
+}
+
+/* p sinscrire / Mise en gras bleu foncé / Flottement à droite
+Alignement avec Nav */
+.sinscrire 
+{
+font-weight: bolder;
+font-size: 16px;
+color: #0065fc;
+position: relative;
+right: 240px;
+top: 20px;
+}
+
+/*************************
+FOOTER
+*************************/
+.footer
+{
+display: flex;
+flex-direction: column;
+}
 }

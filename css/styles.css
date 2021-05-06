@@ -13,24 +13,17 @@ VARIABLES
 --font: 'Raleway',arial, sans-serif;
 }  
 
-.container
-{
-margin: 0 auto;
-padding: auto;
-/*largeur de la page*/
-max-width: 1440px;
-}
-  
+/* marge intérieur hébergement/les plus populaires */
 section,aside
 {
 padding: 1rem 2rem;    
 }
 
+/* largeur du site/marge/police */
 body 
 {
 margin: auto;
 max-width: 1440px;
-/*police*/
 font-family:'Raleway', sans-serif; 
 }
 
@@ -38,19 +31,23 @@ font-family:'Raleway', sans-serif;
 Header
 *************************/
 
+/* alignement en ligne des éléments*/
 .header
 {
 display: flex;
 justify-content: space-between; 
 }
 
+.logo a 
+{
+display: flex;
+padding-top: 1.8rem;
+}
+
 .navigation
 {
 display: flex;
 align-items: flex-end;
-min-width: 100px; 
-position: relative;
-bottom: 0px;
 }
 
 nav ul 
@@ -63,10 +60,9 @@ margin-right: 20px;
 font-weight: 500;
 }
 
-/* Abaisser nav et bordure noire transparente */
+/* Espace entre les éléments */
 nav ul li 
 {
-border-top: solid 3px transparent;
 padding: 46px 30px 0 30px;
 }
   
@@ -90,9 +86,9 @@ font-weight: bolder;
 font-size: 16px;
 color: #0065fc;
 margin-right: 52px;
-padding-top: px;
 }
-  
+
+/* Couleur texte / retrait décoration bas*/
 a 
 {
 color: rgb(0, 0, 0);
@@ -117,17 +113,17 @@ Titre, Filtres, Recherche
   
 h2 span 
 {
+/* Alignement en bloque */
 display: block;
 font-size: 1rem;
 font-weight: normal;
 margin-top: 0.75rem;
 }
-
   
 /* Champ de recherche */
 form 
 {
-margin: 2rem 0; 
+margin: 1rem 0; 
 }
 
 /*barre de recherche*/
@@ -141,12 +137,14 @@ display: flex;
 height: 3rem;
 max-width: 420px;
 }
-  
+
+/* taille écriture / icône*/
 .form > * 
 {
 font-size: 1rem;
 }
-  
+
+/*disposition des icônes / taille du bouton*/
 .form label,.form button 
 {
 align-items: center;
@@ -156,48 +154,54 @@ min-width: 3rem;
 cursor: pointer;
 padding: 10px;
 }
-  
+
+/*icône localistion*/
 label 
 {
 background-color: var(--tertiary-color);
-border-radius: 1rem 0 0 1rem;
+border-top-left-radius: 10px;
+border-bottom-left-radius: 10px;
 margin: -1px 0 0 -1px;
 }
-  
+
+/* champs de texte*/
 input 
 {
 border: 0;
+/* gras*/
 font-weight: bold;
 padding-left: 1rem;
-min-width: 0;
 flex: 1;
 font-family: var(--font);
 }
-  
+
+/* Exemple de ville*/
 ::placeholder 
 {
 color: #000;
 opacity: 1;
 }
-  
+
+/* Caractéristiques rechercher */
 button 
 {
 background-color: var(--primary-color);
 border: 0;
 border-radius: 1rem;
-padding: 0;
+padding:0;
 margin: -1px -2px 0 0;
 color: white;   
 }
 
+/*Faire apparaître la loupe*/
 button span 
 {
 display: none;
 }
 
-
 .filtres 
 {
+/* Aligner les filtres et le texte "filtres*/
 align-items: baseline;
 display: flex;
 flex-wrap: wrap;  
@@ -207,18 +211,22 @@ flex-wrap: wrap;
 {
 margin: 0 2rem 0.5rem 2;
 }
-  
+
+
 .filtres-list 
 {
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+/* Largeur de l'ensemble des filtres*/
 width: 900px;
 }
   
 .filtres-list-item 
 {
+/* aligne les icônes et les noms de filtres*/
 align-items: center;
+/* couleur / taille / bordure*/
 border: 2px solid var(--tertiary-color);
 border-radius: 1.75rem;
 cursor: pointer;
@@ -226,16 +234,19 @@ display: flex;
 height: 3rem;
 margin-top: 0.75rem;
 }
-  
+
+/* Icônes*/
 .filtres-list-item div 
 {
+/*Centrer les icônes verticalement*/
 align-items: center;
 background-color: var(--secondary-color);
-border-radius: 50%;
+border-radius: 22px;
 display: flex;
+/* Hauteur des icônes*/
 height: calc(100% + 0.25rem);
+/* Centrer les icônes horizontalement*/
 justify-content: center;
-margin-left: -0.125rem;
 width: 3rem;
 }
   
@@ -243,21 +254,25 @@ width: 3rem;
 {
 font-size: 1.25rem;
 }
-  
+
+/* Texte filtres*/
 .filtres-list-item span 
 {
 font-weight: bold;
 padding: 0 1rem;
 }
-  
+
+/* Survol bouttons filtres*/
 .filtres-list-item:hover 
 {
+/* Couleur survol boutton*/
 background-color: var(--secondary-color);
 border-color: var(--tertiary-color);
+/* Couleur texte*/
 color: white;
 }
 
-/* couleur des filtres */
+/* couleur des icônes */
 .filtres-list-item i,.information i 
 {
 color: var(--primary-color);
@@ -265,12 +280,14 @@ color: var(--primary-color);
   
 .information 
 {
+/* Aligner l'icône avec le texte*/
 align-items: baseline;
 display: flex;
 font-size: 15px;
 margin-top: 1rem;
 }
-  
+
+/* bordure "i"*/
 .information div 
 {
 border: 1px solid var(--tertiary-color);
@@ -287,11 +304,7 @@ min-width: 2rem;
 margin-left: 0.9rem;
 }
 
-.logo a 
-{
-display: flex;
-padding-top: 1.8rem;
-}
+
  
 /************************
 MAIN
@@ -319,7 +332,7 @@ font-weight: bold;
 }
 
 /************************
-Cards
+CARDS
 *************************/
 .cards 
 {
@@ -347,7 +360,8 @@ flex-direction: column;
 margin-bottom: 0.75rem;
 width: 100%;
 }
-  
+
+/* Survol des cartes*/
 .card:hover 
 {
 box-shadow:0 5px 18px #4975b3, 0 1px 0px black;
@@ -359,10 +373,6 @@ height: 140px;
 flex-direction: row;
 }
 
-section .Activités
-{
-height: 100px;
-}
 
 
 .Activités .card 
@@ -377,7 +387,7 @@ height: 200px;
 height: 200px;
 }
 
-/*largeur image*/
+/* Largeur image*/
 .Populaires .card-img 
 {
 max-width: 42%;
@@ -389,7 +399,7 @@ max-width: 42%;
 height: 115px;
 }
 
-/*propriété version mobile*/
+
 .Activités .card-img 
 {
 height: calc(100% - 3rem);
@@ -406,7 +416,8 @@ height: 100%;
 {
 border-radius: 1rem 0 0 1rem;
 }
-  
+
+/* Bordure carte Activités*/
 .Hébergements .card-img img, .Activités .card-img img 
 {
 border-radius: 1rem 1rem 0 0;
@@ -453,14 +464,15 @@ padding-left: 1.125rem;
 margin-top: 0.5rem;
 }
 
-/*étoiles*/
+/* Étoiles*/
 .card i 
 {
 color: var(--tertiary-color);
 font-size: 0.75rem;
 letter-spacing: 0px;
 }
-  
+
+/* Couleur de étoiles*/  
 .card .blue 
 {
 color: var(--primary-color);
@@ -616,7 +628,6 @@ flex: 1;
 max-height: 3rem;
 }
 }
-
 
 /***********************
 VERSION TABLETTE

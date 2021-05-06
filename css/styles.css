@@ -73,20 +73,19 @@ nav ul li:hover
   border-top: solid 2.5px #0065fc;
   transition-duration: 0.2s;
 }
-  
+
+/* survol texte bleu*/
 .menuitem a:hover 
 {
   color: #0065fc;
 }
 
-/* p sinscrire / Mise en gras bleu foncé / Flottement à droite
-Alignement avec Nav */
+/* p sinscrire / Mise en gras bleu foncé */
 .sinscrire 
 {
   font-weight: bolder;
   font-size: 16px;
   color: #0065fc;
-  float: right;
   margin-right: 52px;
   padding-top: px;
 }
@@ -96,10 +95,12 @@ a
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
-  
+ 
+/* survol afficher plus/ liens footer */
 .more:hover,footer a:hover 
 {
   box-shadow:0 0px 8px #0065fc, 0 0px 0px black;
+  border-radius: 22px;
 }
   
 ul 
@@ -107,11 +108,6 @@ ul
   list-style-type: none;  
 }
   
-p 
-{
-  margin: 1;
-}
-
 /*************************************************
   Titre, Filtres, Recherche
 **************************************************/
@@ -126,7 +122,6 @@ h2 span
 
   
 /* Champ de recherche */
-  
 form 
 {
   margin: 2rem 0; 
@@ -197,10 +192,6 @@ button span
   display: none;
 }
 
-
-
-
-  
 /*Filtres*/
 .filtres 
 {
@@ -300,8 +291,7 @@ button span
  
 /**************************
   MAIN
-****************************/
-  
+****************************/ 
 .Populaires 
 {
   background-color: var(--tertiary-color);
@@ -324,9 +314,6 @@ button span
   font-weight: bold;
 }
 
-  
-
-  
 /*Cards*/
 .cards 
 {
@@ -365,7 +352,13 @@ button span
   height: 140px;
   flex-direction: row;
 }
-  
+
+section .Activités
+{
+  height: 100px;
+}
+
+
 .Activités .card 
 {
   padding: 0;
@@ -535,7 +528,6 @@ button span
   }
 }
  
-
 @media screen and (min-width: 768px)
 {
   .Hébergements .cards 

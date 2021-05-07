@@ -10,7 +10,7 @@ VARIABLES
 /*gris*/
 --tertiary-color: #f2f2f2;
 /*police*/
---font: 'Raleway',sans-serif;
+--font: 'Raleway','Raleway';
 }  
 
 /* marge intérieur hébergement/les plus populaires */
@@ -57,7 +57,7 @@ list-style-type: none;
 margin-top: 0;
 margin-right: 20px;
 /* Rendre plus visible */
-font-weight: 500;
+font-weight: 400;
 }
 
 /* Espace entre les éléments */
@@ -116,7 +116,6 @@ h2 span
 /* Alignement en bloque */
 display: block;
 font-size: 1rem;
-font-weight: normal;
 margin-top: 0.75rem;
 }
   

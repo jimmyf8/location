@@ -19,8 +19,12 @@ section,aside
 padding: 1rem 2rem;    
 }
 
-
-@import url('https://fonts.googleapis.com/css2? family = Raleway: ital, wght @ 0,100; 0,200; 0,300; 0,400; 0,500; 0,600; 1,100; 1,200; 1,300; 1,400; 1,500 & display = swap ');
+@font-face {
+    font-family : 'Raleway';
+    font-style : normal;
+    font-weight : 400;
+    src : url(https://fonts.gstatic.com/s/raleway/v19/1Ptxg8zYS_SKggPN4iEgvnHyvveLxVvaorCIPrQ.ttf) format('truetype');
+    }
 /* largeur du site/marge/police */
 body 
 {
@@ -210,7 +214,7 @@ flex-wrap: wrap;
   
 .filtres h3 
 {
-margin: 0 2rem 0.5rem 2;
+margin: 0rem 2rem 0.5rem 2rem;
 }
 
 
@@ -575,7 +579,7 @@ margin: 2rem auto 0;
 .card-group1, .card-group2
 {
 height: 650px;
-flex-wrap: flex;
+flex-wrap: wrap;
 flex: 1 100%;
 align-content: space-between;
 justify-content: space-between;

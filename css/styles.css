@@ -1,17 +1,6 @@
 /************************
 VARIABLES
 *************************/
-:root 
-{
-/*bleu*/
---primary-color: #0065fc;
-/*bleu clair*/
---secondary-color: #deebff;
-/*gris*/
---tertiary-color: #f2f2f2;
-/*police*/
---font: 'Raleway-Regular';
-}  
 
 /* marge intérieur hébergement/les plus populaires */
 section,aside
@@ -134,7 +123,7 @@ margin: 1rem 0;
 /*barre de recherche*/
 .form 
 {
-border-color: var(--tertiary-color);
+border-color: #f2f2f2;
 border-radius: 1rem;
 border-style: solid;
 border-width: 1px;
@@ -163,7 +152,7 @@ padding: 10px;
 /*icône localistion*/
 label 
 {
-background-color: var(--tertiary-color);
+background-color: #f2f2f2;
 border-top-left-radius: 10px;
 border-bottom-left-radius: 10px;
 margin: -1px 0 0 -1px;
@@ -190,7 +179,7 @@ opacity: 1;
 /* Caractéristiques rechercher */
 button 
 {
-background-color: var(--primary-color);
+background-color: #0065fc;
 border: 0;
 border-radius: 1rem;
 padding:0;
@@ -232,7 +221,7 @@ width: 900px;
 /* aligne les icônes et les noms de filtres*/
 align-items: center;
 /* couleur / taille / bordure*/
-border: 2px solid var(--tertiary-color);
+border: 2px solid #f2f2f2;
 border-radius: 1.75rem;
 cursor: pointer;
 display: flex;
@@ -245,7 +234,7 @@ margin-top: 0.75rem;
 {
 /*Centrer les icônes verticalement*/
 align-items: center;
-background-color: var(--secondary-color);
+background-color: #deebff;
 border-radius: 22px;
 display: flex;
 /* Hauteur des icônes*/
@@ -271,8 +260,8 @@ padding: 0 1rem;
 .filtres-list-item:hover 
 {
 /* Couleur survol boutton*/
-background-color: var(--secondary-color);
-border-color: var(--tertiary-color);
+background-color: #deebff;
+border-color: #f2f2f2;
 /* Couleur texte*/
 color: white;
 }
@@ -280,7 +269,7 @@ color: white;
 /* couleur des icônes */
 .filtres-list-item i,.information i 
 {
-color: var(--primary-color);
+color: #0065fc;
 }
   
 .information 
@@ -295,7 +284,7 @@ margin-top: 1rem;
 /* bordure "i"*/
 .information div 
 {
-border: 1px solid var(--tertiary-color);
+border: 1px solid #f2f2f2;
 border-radius: 60%;
 display: flex;
 justify-content: center;
@@ -316,7 +305,7 @@ MAIN
 *************************/
 .Populaires 
 {
-background-color: var(--tertiary-color);
+background-color: #f2f2f2;
 }
   
 .Populaires .titre
@@ -472,7 +461,7 @@ margin-top: 0.5rem;
 /* Étoiles*/
 .card i 
 {
-color: var(--tertiary-color);
+color: #f2f2f2;
 font-size: 0.75rem;
 letter-spacing: 0px;
 }
@@ -480,7 +469,7 @@ letter-spacing: 0px;
 /* Couleur de étoiles*/  
 .card .blue 
 {
-color: var(--primary-color);
+color:#0065fc;
 }
   
 @media screen and (min-width: 768px)
@@ -661,7 +650,7 @@ padding-top: 10px;
 .Hébergements 
 {
 display:grid;
-background-color: var(--tertiary-color);
+background-color: #f2f2f2;
 flex: 10;
 border-radius: 1rem;
 min-height: 610px;
